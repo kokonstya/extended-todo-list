@@ -1,0 +1,63 @@
+.todos h3 {
+    text-align: center;
+}
+
+.todo-item {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-item button i {
+    font-size: 24px;
+}
+.todo-item button {
+    align-items: center;
+    display: flex;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.todo-item h5 {
+    width: 100%;
+    font-size: 18px;
+    display: flex;
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+    padding-left: 50px;
+    max-width: 485px;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.todo-item.checkbox .form-check-input {
+    width: 40px;
+    height: 40px;
+}
+.todo-item.done {
+    background-color: green;
+}
+
+.todo-item.important {
+    color: red;
+    font-weight: bold;
+}
+.todo-item.important:after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 60px;
+    top: 22px;
+    background-color: red;
+}
+.todo-item h5 span {
+    display: flex;
+    font-size: 14px;
+}
+.todos-title {
+    margin: 15px;
+}
+

@@ -1,0 +1,13 @@
+.error {
+    font-size: 30px;
+    text-align: center;
+}
+.error .fa-bug {
+    z-index: -1;
+    position: absolute;
+    font-size: 180px;
+    opacity: 0.2;
+    color: red;
+    left: 150px;
+}
+
