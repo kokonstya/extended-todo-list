@@ -11,10 +11,10 @@ const App = () => {
         <div className={'container-xl'}>
             <AppHeader/>
             <div className="row">
-                <div className="col-5 todo-lists-wrapper">
+                <div className="col-md-5 col-sm-12 todo-lists-wrapper">
                     <TodoLists/>
                 </div>
-                <div className="col-7 todos-wrapper">
+                <div className="col-md-7 col-sm-12 todos-wrapper">
                     <Todos/>
                 </div>
             </div>

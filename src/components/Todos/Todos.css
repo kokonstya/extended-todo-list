@@ -4,6 +4,7 @@
 
 .todo-item {
     display: flex;
+    flex-direction: row;
     position: relative;
     justify-content: center;
     align-items: center;
@@ -17,12 +18,14 @@
     display: flex;
     height: 50px;
     border-radius: 50%;
-    margin-right: 10px;
+    /*margin-right: 10px;*/
 }
 .todo-item h5 {
     width: 100%;
     font-size: 18px;
     display: flex;
+    flex-direction: row;
+
     border: 1px solid black;
     margin: 10px;
     padding: 10px;
@@ -40,17 +43,18 @@
     background-color: green;
 }
 
-.todo-item.important {
+.todo-item h5 {
     color: red;
     font-weight: bold;
+    position: relative;
 }
-.todo-item.important:after {
+.todo-item h5:after {
     content: '';
     width: 20px;
     height: 20px;
     position: absolute;
-    left: 60px;
-    top: 22px;
+    left: 15px;
+    top: 25%;
     background-color: red;
 }
 .todo-item h5 span {
@@ -61,3 +65,15 @@
     margin: 15px;
 }
 
+@media (max-width: 768px) {
+    .todo-item h5 {
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+    }
+    .todo-item h5 span {
+        display: flex;
+        font-size: 10px;
+        margin-top: 5px;
+    }
+}

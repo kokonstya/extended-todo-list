@@ -44,11 +44,11 @@ const TodoLists = ({
             />
             <div>
                 <ButtonGroup>
-                    <Button onClick={() => onFilterChanged('all')} size="lg"
+                    <Button onClick={() => onFilterChanged('all')} size="md"
                             variant={classNameAll}>Все</Button>
-                    <Button onClick={() => onFilterChanged('active')} size="lg"
+                    <Button onClick={() => onFilterChanged('active')} size="md"
                             variant={classNameActive}>Неисполненные</Button>
-                    <Button onClick={() => onFilterChanged('done')} size="lg"
+                    <Button onClick={() => onFilterChanged('done')} size="md"
                             variant={classNameDone}>Исполненные</Button>
                 </ButtonGroup>
                 {filter(todoLists, filterValue).sort(function (a, b) {
