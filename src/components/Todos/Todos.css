@@ -43,12 +43,12 @@
     background-color: green;
 }
 
-.todo-item h5 {
+.todo-item.important h5 {
     color: red;
     font-weight: bold;
     position: relative;
 }
-.todo-item h5:after {
+.todo-item.important h5:after {
     content: '';
     width: 20px;
     height: 20px;
